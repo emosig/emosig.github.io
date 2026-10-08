@@ -40,6 +40,7 @@
     ],
     "email": "mailto:eloy.mosig@phd.unipi.it",
     "url": "https://emosig.github.io/",
+    "image": "https://emosig.github.io/images/photo.jpg",
     "knowsAbout": ["Probability theory", "Applied algebraic topology", "Persistent homology", "Optimal transport", "Deep learning theory"],
     "sameAs": [
       "https://github.com/emosig"
@@ -57,45 +58,22 @@
       <p class="field">Probability theory and applied topology</p>
       <ul class="links">
         <li><a href="mailto:eloy.mosig@phd.unipi.it">eloy.mosig@phd.unipi.it</a></li>
-        <li><a href="https://arxiv.org/search/?searchtype=author&amp;query=Mosig+Garc%C3%ADa%2C+E">arXiv</a></li>
         <!-- TODO: add your Google Scholar / ORCID links if you have them -->
-        <!-- <li><a href="https://scholar.google.com/citations?user=...">Google Scholar</a></li> -->
+        <li><a href="https://scholar.google.com/citations?user=...">Google Scholar</a></li>
         <!-- <li><a href="https://orcid.org/...">ORCID</a></li> -->
         <li><a href="https://github.com/emosig">GitHub</a></li>
         <li><a href="cv.pdf">CV (PDF)</a></li>
       </ul>
     </div>
 
-    <figure class="barcode" aria-hidden="true">
-      <svg viewBox="0 0 260 132" role="presentation">
-        <g class="h0">
-          <line x1="20" y1="10"  x2="256" y2="10"/>
-          <line x1="20" y1="18"  x2="196" y2="18"/>
-          <line x1="20" y1="26"  x2="158" y2="26"/>
-          <line x1="20" y1="34"  x2="129" y2="34"/>
-          <line x1="20" y1="42"  x2="97"  y2="42"/>
-          <line x1="20" y1="50"  x2="74"  y2="50"/>
-          <line x1="20" y1="58"  x2="55"  y2="58"/>
-          <line x1="20" y1="66"  x2="38"  y2="66"/>
-        </g>
-        <g class="h1">
-          <line x1="91"  y1="82"  x2="224" y2="82"/>
-          <line x1="117" y1="90"  x2="171" y2="90"/>
-          <line x1="128" y1="98"  x2="160" y2="98"/>
-          <line x1="149" y1="106" x2="193" y2="106"/>
-          <line x1="176" y1="114" x2="199" y2="114"/>
-        </g>
-        <line class="axis" x1="20" y1="124" x2="256" y2="124"/>
-        <text x="4" y="40">H<tspan dy="3" font-size="8">0</tspan></text>
-        <text x="4" y="101">H<tspan dy="3" font-size="8">1</tspan></text>
-      </svg>
-    </figure>
+    <img class="portrait" src="images/photo.jpg" alt="Eloy Mosig García" width="200" height="240">
   </header>
 
   <nav class="site-nav" aria-label="Sections">
     <a href="#about">About</a>
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
+    <a href="#coauthors">Coauthors</a>
     <a href="#cv">CV</a>
   </nav>
 
@@ -110,15 +88,15 @@
 
     <section id="research">
       <h2>Research</h2>
-      <div class="body">
+            <div class="body">
         <h3>Quantitative limits of neural networks</h3>
-        <p>I prove convergence rates for neural networks in large-width regimes. With Andrea Agazzi and Dario Trevisan, I obtained the first quantitative bound, in quadratic Wasserstein distance, on how close a trained wide network is to its Gaussian-process limit at any positive training time. Later work extends this to general architectures through tensor programs, and to deep transformers, where token trajectories converge to a stochastic interacting particle system that synchronizes when the common noise is strong enough.</p>
+        <p>I prove convergence rates for neural networks in large-width regimes. With Andrea Agazzi and Dario Trevisan, I obtained <a href="https://doi.org/10.52202/085713-5492">the first quantitative bound</a>, in quadratic Wasserstein distance, on how close a trained wide network is to its Gaussian-process limit at any positive training time. Later work extends this to <a href="https://arxiv.org/abs/2607.06290">general architectures through tensor programs</a>, and to <a href="https://arxiv.org/abs/2604.26898">deep transformers</a>, where token trajectories converge to a stochastic interacting particle system that synchronizes when the common noise is strong enough.</p>
 
         <h3>Multiparameter persistence</h3>
-        <p>With Patrizio Frosini's group, I study distances between multiparameter persistence modules. We showed that the matching distance is attained on a structured set of parameters described by the extended Pareto grid, a Morse-theoretic invariant, and introduced the convex matching distance, which preserves the smoothness of the input and can be used in gradient-based optimization.</p>
+        <p>I study distances between multiparameter persistence modules. In joint work, we showed that <a href="https://doi.org/10.1137/24M1680398">the matching distance is attained on a structured set of parameters</a> described by the extended Pareto grid, a Morse-theoretic invariant, and introduced <a href="https://arxiv.org/abs/2512.02944">the convex matching distance</a>, which preserves the smoothness of the input and can be used in gradient-based optimization.</p>
 
-        <h3>Where these meet</h3>
-        <p>I am now working towards quantitative limit theorems for topological descriptors of random fields and random geometric structures, bringing the probabilistic tools above to bear on persistent homology.</p>
+        <h3>Group equivariant operators</h3>
+        <p>My work on multiparameter persistence fits into the theory of <a href="https://doi.org/10.1038/s42256-019-0087-3">group equivariant non-expansive operators</a> (GENEOs), developed as a way to build prescribed symmetries directly into topological descriptors. The operator families behind both the classical and the convex matching distance are particular cases of GENEOs.</p>
       </div>
     </section>
 
@@ -161,20 +139,22 @@
       </div>
     </section>
 
+        <section id="coauthors">
+      <h2>Coauthors</h2>
+      <div class="body">
+        <p>
+          <a href="https://andagazzi.github.io/">Andrea Agazzi</a>, <a href="https://gbruno16.github.io/">Giuseppe Bruno</a>, Francesco Conti,
+          <a href="https://www.unipi.it/ateneo/organizzazione/persone/patrizio-frosini-198939/">Patrizio Frosini</a>, <a href="https://fugacci.github.io/home/">Ulderico Fugacci</a>, <a href="https://www.unibo.it/sitoweb/nicola.quercioli2">Nicola Quercioli</a>,
+          <a href="https://people.dm.unipi.it/romito/">Marco Romito</a>, <a href="#">Samuele  Saviozzi</a>, <a href="https://directory.uniroma2.it/chart/dettagliDocente/18809">Sara Scaramuccia</a>,
+          <a href="https://sites.google.com/view/francescatombari/homepage">Francesca Tombari</a>, <a href="https://web.dm.unipi.it/trevisan/it/">Dario Trevisan</a>
+        </p>
+      </div>
+    </section>
+
     <section id="cv">
       <h2>CV</h2>
       <div class="body">
         <p><a class="download" href="cv.pdf">Download full CV (PDF)</a></p>
-        <dl class="timeline">
-          <dt>2026–</dt>
-          <dd>Research fellow, Università di Pisa, project OTODDLE</dd>
-          <dt>2023–</dt>
-          <dd>PhD in Mathematics, Università di Pisa. Research visits to the Universität Bern (2025), hosted by Andrea Agazzi</dd>
-          <dt>2021–2023</dt>
-          <dd>MSc in Mathematics, Università di Bologna</dd>
-          <dt>2019–2021</dt>
-          <dd>BSc in Mathematics, Universidad Complutense de Madrid</dd>
-        </dl>
       </div>
     </section>
   </main>

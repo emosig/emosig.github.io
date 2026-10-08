@@ -175,3 +175,6 @@ footer {
   .site-nav, .barcode, .skip { display: none; }
   a { color: inherit; }
 }
+
+.portrait { width: 11rem; height: auto; border-radius: 4px; }
+@media (max-width: 760px) { .portrait { width: 8rem; order: -1; } }
